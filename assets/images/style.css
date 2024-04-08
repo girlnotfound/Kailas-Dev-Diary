@@ -5,12 +5,14 @@
     --lilac: #c4bbf0;
 }
 
-* body {
-    background-color: var(--lilac);
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+body {
+    background-color: var(--lilac);
 }
 
 header {
@@ -46,14 +48,11 @@ img {
     max-width: 20%;
 }
 
-.content {
-    display: flex;
-    background-color: var(--lavender);
-}
-
-.card {
-    width: 80%;
-    margin: 40px auto;
-    border: 5px solid var(--lavender);
-    box-shadow: 5px 10px var(--deep-purple);
+.sidebar {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: right;
+    border: var(--deep-purple);
+    box-shadow: 0 4px 8px var(--blue-gray);
 }
