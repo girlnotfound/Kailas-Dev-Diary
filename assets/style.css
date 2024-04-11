@@ -71,6 +71,8 @@ figure img {
 }
 
 a img {
+    display: flex;
+    justify-content: center;
     max-width: 80%;
 }
 
@@ -99,13 +101,19 @@ footer {
 }
 
 .information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
+    height: 100%;
     width: 100%;
 }
 
-.column {
+.deployed {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {

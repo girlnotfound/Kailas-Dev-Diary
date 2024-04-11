@@ -12,7 +12,8 @@
 
 - I used CSS Variables for easy styling and to keep the site looking consistent.
 
-This portfolio will be continuously growing, just like my skills!
+
+### This portfolio will be continuously growing, just like my skills!
 
 ## Collaborators
 
