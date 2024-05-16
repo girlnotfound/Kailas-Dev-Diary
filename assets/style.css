@@ -114,16 +114,42 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: auto;
+}
+
+.deployed a {
+    display: block;
+    width: 200px; /* set a fixed width for the links containing images */
+    height: 200px; /* set a fixed height for the links containing images */
+}
+
+.deployed a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* to ensure the image covers the area and maintains aspect ratio */
 }
 
 /* Used media query to stack items into a column, one on top of the other when the window is smaller */
 @media screen and (max-width: 768px) {
+
     body,
     header,
     section,
     img,
     .content {
         flex-direction: column;
+    }
+
+    .deployed {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .deployed a {
+        width: 100%;
+        height: auto; /* to allow height to adjust */
+    }
+    
+    .deployed a img {
+        height: auto;
     }
 }
