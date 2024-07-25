@@ -1,155 +1,145 @@
 :root {
-    --blue-gray: #363b4e;
-    --deep-purple: #4f3b78;
-    --lavender: #927fbf;
-    --lilac: #c4bbf0;
+  --blue-gray: #363b4e;
+  --deep-purple: #4f3b78;
+  --lavender: #927fbf;
+  --lilac: #c4bbf0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    background-color: var(--lilac);
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lilac);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 header {
-    padding: 20px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--blue-gray);
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: flex-start;
+  padding: 20px;
+  background-color: var(--blue-gray);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+header h1 {
+  font-size: 20px;
+}
 
 header nav {
-    padding-top: 45px;
-    margin-right: 20px;
-    float: right;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 30px;
-    font-weight: 550;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: 550;
 }
 
 header nav ul {
-    list-style-type: none;
-    margin-top: -6.4%;
+  list-style-type: none;
+  display: flex;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
-a {
-    color: white;
+header nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 figure img {
-    height: auto;
-    max-width: 20%;
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
+  height: auto;
+  max-width: 20%;
+  display: block;
+  margin: 3% auto;
 }
 
-a img {
-    display: flex;
-    justify-content: center;
-    max-width: 80%;
+section.content {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 5px solid var(--lavender);
+  box-shadow: 5px 10px var(--deep-purple);
+  background-color: var(--lavender);
 }
 
-img {
-    max-width: 45%;
+section.content:hover {
+  box-shadow: inset 0px 0px 8px var(--lilac), 0 0 15px var(--deep-purple);
+}
+
+article.information {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.content .deployed a {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  overflow: hidden;
+  position: relative;
+}
+
+.content .deployed a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.resume-graphic {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--blue-gray);
+  color: white;
+  width: 100%;
+  flex-shrink: 0;
 }
 
-/* Used classes to target specific sections in my html */
-.content {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: 40px auto;
-    border: 5px solid var(--lavender);
-    box-shadow: 5px 10px var(--deep-purple);
-    background-color: var(--lavender);
-    justify-content: space-between;
-    padding: 0 10px;
-}
-
-.content:hover {
-    box-shadow: inset 0px 0px 8px var(--lilac), 0 0 15px var(--deep-purple);
-}
-
-.information {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
-
-.deployed {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.deployed a {
-    display: block;
-    width: 200px; /* set a fixed width for the links containing images */
-    height: 200px; /* set a fixed height for the links containing images */
-}
-
-.deployed a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* to ensure the image covers the area and maintains aspect ratio */
-}
-
-/* Used media query to stack items into a column, one on top of the other when the window is smaller */
 @media screen and (max-width: 768px) {
+  body,
+  header,
+  section.content,
+  .deployed a {
+    flex-direction: column;
+  }
 
-    body,
-    header,
-    section,
-    img,
-    .content {
-        flex-direction: column;
-    }
-
-    .deployed {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .deployed a {
-        width: 100%;
-        height: auto; /* to allow height to adjust */
-    }
-    
-    .deployed a img {
-        height: auto;
-    }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

@@ -12,8 +12,9 @@
 
 - I used CSS Variables for easy styling and to keep the site looking consistent.
 
-
 ### This portfolio will be continuously growing, just like my skills!
+
+![Screenshot of Kaila's Dev Diary](./assets/images/Screenshot-Kaila's-Dev-Diary.png)
 
 ## Collaborators
 

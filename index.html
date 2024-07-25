@@ -1,95 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Kaila's Dev Diary</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Kaila Ronquillo</h1>
-            <!-- Created navbar -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about"> About Me</a>
-                    </li>
-                    <li>
-                        <a href="#work"> Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact"> Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#resume"> Resume</a>
-                    </li>
-                </ul>
-            </nav>
+      <h1>Kaila Ronquillo</h1>
+      <!-- Created navbar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#about"> About Me</a>
+          </li>
+          <li>
+            <a href="#work"> Work</a>
+          </li>
+          <li>
+            <a href="#contact"> Contact Me</a>
+          </li>
+          <li>
+            <a href="#resume"> Resume</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
-    <!-- Used figure to host image -->
-    <figure>
-        <img src="./assets/images/thumbnail_IMG_9059.jpg" alt="image of self" class="float-left">
-    </figure>
-    <!-- Created section for content -->
-    <section class="content" id="about">
+    <main>
+      <!-- Used figure to host image -->
+      <figure>
+        <img
+          src="./assets/images/unnamed (2).jpg"
+          alt="image of self"
+          class="float-left"
+        />
+      </figure>
+      <!-- Created section for content -->
+      <section class="content" id="about">
         <!-- Used articles to separate content-->
-        <h2>
-            About Me:
-        </h2>
+        <h2>About Me:</h2>
         <article class="information">
-            <p>
-                Hi, I'm Kaila! A budding full-stack developer, currently enhancing my skills through a coding bootcamp. Driven by
-                curiosity and a love for problem-solving, I'm passionate about combining creativity with technical skills to create
-                smooth and effective digital experiences.
-                <br>
-                Outside the world of code, you'll find me delving into the intriguing world of true crime, losing myself in books,
-                finding balance with yoga, gliding on roller skates, or enjoying quality time with my loyal dog. My diverse interests
-                not only fuel my creativity but also bring a unique perspective to my work in technology.
-            </p>
+          <p>
+            Hi, I'm Kaila! A budding full-stack developer, currently enhancing
+            my skills through a coding bootcamp. Driven by curiosity and a love
+            for problem-solving, I'm passionate about combining creativity with
+            technical skills to create smooth and effective digital experiences.
+            <br />
+            Outside the world of code, you'll find me delving into the
+            intriguing world of true crime, losing myself in books, finding
+            balance with yoga, gliding on roller skates, or enjoying quality
+            time with my loyal dog. My diverse interests not only fuel my
+            creativity but also bring a unique perspective to my work in
+            technology.
+          </p>
         </article>
-    <!-- Each block of content gets their own section to keep things organized -->
-    </section>
-    <section class="content" id="work">
-        <h2>
-            Work:
-        </h2>
-        <article class="deployed">
-            <a href="https://girlnotfound.github.io/Domain-Hunter-HQ/">
-                <img src="./assets/images/Domain-Hunter-Screenshot.png" alt="Screenshot of Domain Hunter HQ Webpage">
-            </a>
-        </article>
-        <article class="deployed">
-            <a href="https://girlnotfound.github.io/Horiseon-Reimagined/">
-                <img src="./assets/images/Horiseon Application.png" alt="Screenshot of Horiseon Reimagined Webpage">
-            </a>
-        </article>
-        <article class="deployed">
-            <a href="https://girlnotfound.github.io/prework-study-guide/">
-                <img src="./assets/images/Study-Guide.png" alt="Screenshot of Prework Study Guide Webpage">
-            </a>
-        </article>
-    </section>
-    <section class="content" id="contact">
-        <h2>
-            Contact Me:
-        </h2>
+        <!-- Each block of content gets their own section to keep things organized -->
+      </section>
+      <section class="content" id="work">
+        <h2>Work:</h2>
+        <div class="row">
+          <div class="column project">
+            <div class="content">
+              <article class="deployed">
+                <a href="https://github.com/Felipe1995c/U-Plan-it">
+                  <img
+                    src="./assets/images/U-Plan-It-Screenshot.png"
+                    alt="Screenshot U-Plan-it Repository"
+                  />
+                </a>
+                <h4>U-Plan-It</h4>
+              </article>
+            </div>
+          </div>
+          <div class="column project">
+            <div class="content">
+              <article class="deployed">
+                <a href="https://girlnotfound.github.io/Domain-Hunter-HQ/">
+                  <img
+                    src="./assets/images/Domain-Hunter-Screenshot.png"
+                    alt="Screenshot of Domain Hunter HQ Webpage"
+                  />
+                </a>
+                <h4>Domain Hunter HQ</h4>
+              </article>
+            </div>
+          </div>
+          <div class="column project">
+            <div class="content">
+              <article class="deployed">
+                <a href="https://girlnotfound.github.io/Horiseon-Reimagined/">
+                  <img
+                    src="./assets/images/Horiseon Application.png"
+                    alt="Screenshot of Horiseon Reimagined Webpage"
+                  />
+                </a>
+                <h4>Horiseon Reimagined</h4>
+              </article>
+            </div>
+          </div>
+          <div class="column project">
+            <div class="content">
+              <article class="deployed">
+                <a href="https://girlnotfound.github.io/prework-study-guide/">
+                  <img
+                    src="./assets/images/Study-Guide.png"
+                    alt="Screenshot of Prework Study Guide Webpage"
+                  />
+                </a>
+                <h4>Pre-work Study Guide</h4>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content" id="contact">
+        <h2>Contact Me:</h2>
         <article class="information">
-            <a href="https://github.com/girlnotfound"> Find me on GitHub !</a>
+          <a href="https://github.com/girlnotfound"> Find me on GitHub !</a>
         </article>
-    </section>
-    <section class="content" id="resume">
-        <h2>
-            Resume:
-        </h2>
+      </section>
+      <section class="content" id="resume">
+        <h2>Resume:</h2>
         <article class="information">
-            <img src="./assets/images/comingsoongraphic.jpg" alt="Coming Soon Graphic">
+          <img
+            src="./assets/images/comingsoongraphic.jpg"
+            alt="Coming Soon Graphic"
+            class="resume-graphic"
+          />
         </article>
-    </section>
-    <footer>
-        &#10024; Kaila Ronquillo 2024 &#x2728;
-    </footer>
-</body>
+      </section>
+    </main>
+    <footer>&#10024; Kaila Ronquillo 2024 &#x2728;</footer>
+  </body>
 </html>
